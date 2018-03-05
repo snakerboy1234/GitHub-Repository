@@ -16,5 +16,7 @@ public class ItemSetUp {
 	public static int[][] furniture;
 	public static int[][] bakery;
 	
-	public ArrayList<int[][]> aisle = new ArrayList<int[][]>();
+	public static String[][] Storage;
+	
+	public static ArrayList<int[][]> aisle = new ArrayList<int[][]>();
 }

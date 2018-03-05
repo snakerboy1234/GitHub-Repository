@@ -18,6 +18,9 @@ public class timerForPerishablityClass {
 	private static String errorMessage = "If the code gets here something is very wrong";
 
 	@SuppressWarnings("resource")
+	/*
+	 * IF the item is perishable change from long to double because conversion is done before hand
+	 */
 	public static String isRotten(String itemName, boolean isItemPerishable, double itemExpirationDate, double systemTime) {
 		ITP = isItemPerishable;
 		IED = itemExpirationDate;
