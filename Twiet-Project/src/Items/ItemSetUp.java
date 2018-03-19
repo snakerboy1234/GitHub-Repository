@@ -1,4 +1,4 @@
-package shoppingListItems;
+package Items;
 
 import java.util.ArrayList;
 
@@ -19,4 +19,19 @@ public class ItemSetUp {
 	public static String[][] Storage;
 	
 	public static ArrayList<int[][]> aisle = new ArrayList<int[][]>();
+	
+	public static void addArrays() {
+		aisle.add(sportingGoods);
+		aisle.add(frozenFoodDesert);
+		aisle.add(frozenFoodMicrowaveMeals);
+		aisle.add(produce);
+		aisle.add(dairyProducts);
+		aisle.add(cannedGoods);
+		aisle.add(deliMeat);
+		aisle.add(toys);
+		aisle.add(grainProducts);
+		aisle.add(pharmacy);
+		aisle.add(furniture);
+		aisle.add(bakery);
+	}
 }
