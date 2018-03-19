@@ -8,7 +8,7 @@ public class Item {
 	public static String itemType;
 	public static String Perished;
 	public static String itemName;
-	public static String asile;
+	public static int aisle;
 	public static int itemAmount;
 	public static double itemCost;
 	public static double tTE;
@@ -16,7 +16,7 @@ public class Item {
 	public static boolean itemOnGround = false;
 	public static boolean itemPerishable;
 	
-	public Item(String itemType, String itemName, String asile, int itemAmount, double itemCost, long timeTillExpiration, boolean itemOnGround, boolean itemPerishable){
+	public Item(String itemTypeC, String itemNameC, int aisleNum, int itemAmountC, double itemCostC, long timeTillExpirationC, boolean itemOnGroundC, boolean itemPerishableC){
 		
 	}
 	
@@ -38,7 +38,10 @@ public class Item {
 	}
 	public boolean pickUpItemOnGround() {
 		if(itemOnGround) {
-			itemOnGround = itemOnGround!;
+			itemOnGround = false;
+			return itemOnGround;
+		}
+		else {
 			return itemOnGround;
 		}
 	}
