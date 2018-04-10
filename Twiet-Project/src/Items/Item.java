@@ -1,49 +1,32 @@
 package Items;
 
-import shoppingListItems.timerForPerishablityClass;
-import shoppingListItems.MainForProject;
-
 public class Item {
-	
-	public static String itemType;
-	public static String Perished;
-	public static String itemName;
-	public static int aisle;
-	public static int itemAmount;
-	public static double itemCost;
-	public static double tTE;
-	public static long timeTillExpiration;
-	public static boolean itemOnGround = false;
-	public static boolean itemPerishable;
-	
-	public Item(String itemTypeC, String itemNameC, int aisleNum, int itemAmountC, double itemCostC, long timeTillExpirationC, boolean itemOnGroundC, boolean itemPerishableC){
-		
+	private static double itemCostU;
+	private static int itemAmountU;
+	private static String itemNameU;
+	private static String itemTypeU;
+	public Item(double itemCost, int itemAmount, String itemName, String itemType) {
+		itemCost = itemCostU;
+		itemAmount = itemAmountU;
+		itemName = itemNameU;
+		itemType = itemTypeU;
 	}
-	
-	public String callItemName() {
-		return itemName;
+	public static double returnPrice() {
+		return itemCostU;
 	}
-	public String callItemType() {
-		return itemType;
+	public static int returnAmountOfItemInAisle() {
+		return itemAmountU;
 	}
-	public int callItemAmount() {
-		return itemAmount;
+	public static String returnItemName() {
+		return itemNameU;
 	}
-	public double callItemCost() {
-		return itemCost;
+	public static String returnItemType() {
+		return itemTypeU;
 	}
-	public String callTimeTillExpiration() {
-		tTE = timeTillExpiration;
-		Perished = timerForPerishablityClassisRotten(itemName, itemPerishable, tTE = System.currentTimeMillis(), startTime);
+	public static void changePrice(double newPrice) {
+		itemCostU = newPrice;
 	}
-	public boolean pickUpItemOnGround() {
-		if(itemOnGround) {
-			itemOnGround = false;
-			return itemOnGround;
-		}
-		else {
-			return itemOnGround;
-		}
+	public static void changeAmountOfItemsInAisle(int newAmountOfItems) {
+		itemAmountU = newAmountOfItems; 
 	}
-	
 }
